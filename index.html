@@ -11,6 +11,29 @@
             box-sizing: border-box;
         }
 
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+
+        .footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
@@ -18,7 +41,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 20px 20px 60px 20px;
         }
 
         .accessibility-button {
@@ -1472,5 +1495,10 @@
         // Start the game when page loads
         window.onload = initGame;
     </script>
+
+    <footer class="footer">
+        © 2025 All rights reserved by <strong>ogiram</strong>
+    </footer>
+
 </body>
 </html>
